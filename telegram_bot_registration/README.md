@@ -14,8 +14,8 @@ ___
 
 
 ## Аvailable links in the app https://registration-bot.herokuapp.com
- + /admin/ - to work with the admin panel, you need an administrator login and password to access
- + /registration/ - registration page
- + /login/ - login page
- + /profile/<profile_number_in_db>/ - profile page
+> + /admin/ - to work with the admin panel, you need an administrator login and password to access
+> + /registration/ - registration page
+> + /login/ - login page
+> + /profile/<profile_number_in_db>/ - profile page
 
