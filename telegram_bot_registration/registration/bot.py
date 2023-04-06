@@ -1,7 +1,6 @@
 from io import BytesIO
 from aiogram import Bot, Dispatcher, types
 from aiogram import executor
-from aiogram import filters
 from django.core.files.uploadedfile import InMemoryUploadedFile
 from PIL import Image
 
@@ -23,7 +22,7 @@ async def handle_text_messages(message):
     try:
         if message.text == 'Start Registration':
             markup = types.ReplyKeyboardRemove()
-            config.get_users_profile_data(message)
+            config.assign_users_profile_data(message)
             await bot.send_message(message.chat.id, "Enter your new login", reply_markup=markup)
 
         elif message.text == 'Finish':
