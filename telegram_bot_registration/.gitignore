@@ -15,4 +15,3 @@ db.sqlite3
 
 # Telegram bot
 .env
-registration/bot_token.txt
