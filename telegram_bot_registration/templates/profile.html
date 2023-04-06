@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>User Profile</h1>
+  {% if user.photo %}
+    <img src="{{ user.photo.url }}" width="300" height="300">
+  {% else %}
+    <p>No photo available</p>
+  {% endif %}
+  <p><strong>First Name:</strong> {{ user.first_name }}</p>
+  <p><strong>Last Name:</strong> {{ user.last_name }}</p>
+  <p><strong>Telegram User Name:</strong> {{ user.user_name }}</p>
+  <p><strong>Phone:</strong> {{ user.phone }}</p>
+{% endblock %}
