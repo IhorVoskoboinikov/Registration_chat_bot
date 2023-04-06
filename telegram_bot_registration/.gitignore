@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Django
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+/media/
+/static/
+*.bak
+*.swp
+
+# Telegram bot
+.env
+registration/bot_token.txt
