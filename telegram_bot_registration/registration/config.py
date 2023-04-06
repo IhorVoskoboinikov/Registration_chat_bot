@@ -1,11 +1,7 @@
-import os
 from collections import defaultdict
 
-USERS_PROFILE = defaultdict(dict)
-
-# with open('bot_token.txt', 'r') as f:
-#     TELEGRAM_TOKEN = f.read()
 TELEGRAM_TOKEN = '6095222446:AAERcOlPxiGc3hxs_sGgVFd9B7XsJ34r7M4'
+USERS_PROFILE = defaultdict(dict)
 
 
 def assign_users_profile_data(message: object) -> None:
@@ -16,5 +12,3 @@ def assign_users_profile_data(message: object) -> None:
     USERS_PROFILE[message.chat.id]['user_name'] = None
     USERS_PROFILE[message.chat.id]['phone'] = None
     USERS_PROFILE[message.chat.id]['photo'] = None
-
-
