@@ -17,7 +17,7 @@ def start_kb(error_login: bool = False) -> Tuple[str, ReplyKeyboardMarkup]:
 def go_to_site() -> Tuple[str, InlineKeyboardMarkup]:
     mess = "To go to the site, click 'Go to the site'"
     start_keyboard = InlineKeyboardMarkup(row_width=1)
-    button = InlineKeyboardButton(text="Go to the site", url='http://127.0.0.1:8000/login/', callback_data="data")
+    button = InlineKeyboardButton(text="Go to the site", url='https://registration-bot.herokuapp.com/login/')
     start_keyboard.add(button)
     return mess, start_keyboard
 
