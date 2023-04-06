@@ -10,4 +10,4 @@ urlpatterns = [
     path('registration/', RegistrationView.as_view(), name='registration'),
     path('profile/<int:user_id>/', ProfileView.as_view(), name='profile'),
     path('login/', CustomLoginView.as_view(), name='login'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
