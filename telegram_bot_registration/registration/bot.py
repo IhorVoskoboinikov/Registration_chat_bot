@@ -1,3 +1,4 @@
+import time
 from io import BytesIO
 from aiogram import Bot, Dispatcher, types
 from aiogram import executor
@@ -109,5 +110,14 @@ async def handler_photo(message):
         print("Error! in @dp.message_handler(content_types=['photo'])", ex)
 
 
+def run_bot():
+    while True:
+        try:
+            executor.start_polling(dp)
+        except Exception as e:
+            time.sleep(1)
+            print(f"Ошибка: {e}")
+
+
 if __name__ == '__main__':
-    executor.start_polling(dp)
+    run_bot()
